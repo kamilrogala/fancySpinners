@@ -5,9 +5,9 @@ Easy to installation and mantaining
 
 # ToDo
 
-- [ ] more spinners
+- [x] more spinners
+- [x] minify
+- [x] make /dist
+- [x] make /docs
 - [ ] and more spinners!
 - [ ] modify README (add instructions, more description and so on)
-- [ ] minify
-- [ ] make /dist
-- [ ] make /docs
