@@ -7,6 +7,51 @@
 	--color-6: #022b3e;
 }
 
+.red {
+	--color-1: #ffbdc0;
+	--color-2: #ffafa6;
+	--color-3: #ff5c4c;
+	--color-4: #ab3730;
+	--color-5: #712520;
+	--color-6: #4c1914;
+}
+
+.green {
+	--color-1: #9fdea6;
+	--color-2: #77e392;
+	--color-3: #00b72b;
+	--color-4: #006d19;
+	--color-5: #004811;
+	--color-6: #00310d;
+}
+
+.yellow {
+	--color-1: #fff4a8;
+	--color-2: #ffef6c;
+	--color-3: #e4a100;
+	--color-4: #8a5f00;
+	--color-5: #5b3f00;
+	--color-6: #3c2c00;
+}
+
+.orange {
+	--color-1: #ffd8a8;
+	--color-2: #ffd074;
+	--color-3: #ff7f00;
+	--color-4: #a34b00;
+	--color-5: #6b3200;
+	--color-6: #472300;
+}
+
+.purple {
+	--color-1: #e0d8ff;
+	--color-2: #efc6ff;
+	--color-3: #b66dff;
+	--color-4: #6741ff;
+	--color-5: #442bb0;
+	--color-6: #311c77;
+}
+
 .spinner {
 	height: 50px;
 	width: 50px;
@@ -3390,5 +3435,102 @@
 		bottom: -5px;
 		right: -5px;
 		height: 5px;
+	}
+}
+
+/* spinner 18 */
+
+.spinner-18 {
+	height: 5px;
+	width: 200px;
+	margin: -2.5px 0 0 -100px;
+	background: var(--color-1);
+	overflow: hidden
+}
+
+.spinner-18::before,
+.spinner-18::after {
+	width: 15px;
+	height: 5px;
+	background: var(--color-3);
+	top: 0;
+	left: -15px;
+}
+
+.spinner-18::before {
+	-webkit-animation: spinner-18 2.5s ease-in infinite forwards;
+	-moz-animation: spinner-18 2.5s ease-in infinite forwards;
+	-o-animation: spinner-18 2.5s ease-in infinite forwards;
+	animation: spinner-18 2.5s ease-in infinite forwards;
+}
+
+.spinner-18::after {
+	-webkit-animation: spinner-18 2.5s 1.25s ease-in infinite forwards;
+	-moz-animation: spinner-18 2.5s 1.25s ease-in infinite forwards;
+	-o-animation: spinner-18 2.5s 1.25s ease-in infinite forwards;
+	animation: spinner-18 2.5s 1.25s ease-in infinite forwards;
+}
+
+@-webkit-keyframes spinner-18 {
+	0 {
+		width: 15px;
+		height: 5px;
+		top: 0;
+		left: -15px;
+	}
+	99% {
+		width: 55px
+	}
+	100% {
+		left: 120%;
+		width: 15px;
+	}
+}
+
+@-moz-keyframes spinner-18 {
+	0 {
+		width: 15px;
+		height: 5px;
+		top: 0;
+		left: -15px;
+	}
+	99% {
+		width: 55px
+	}
+	100% {
+		left: 120%;
+		width: 15px;
+	}
+}
+
+@-o-keyframes spinner-18 {
+	0 {
+		width: 15px;
+		height: 5px;
+		top: 0;
+		left: -15px;
+	}
+	99% {
+		width: 55px
+	}
+	100% {
+		left: 120%;
+		width: 15px;
+	}
+}
+
+@keyframes spinner-18 {
+	0 {
+		width: 15px;
+		height: 5px;
+		top: 0;
+		left: -15px;
+	}
+	99% {
+		width: 55px
+	}
+	100% {
+		left: 120%;
+		width: 15px;
 	}
 }
